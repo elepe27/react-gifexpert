@@ -24,12 +24,13 @@ export const AddCategory = ({setCategories}) => {
     }
 
     return (
-        <form  onSubmit={handleSubmit}>
+        <form  onSubmit={ handleSubmit }>
+            <p> { inputValue } </p>
             <input 
                 type='text' 
                 placeholder='Escribe tu serie aquí...'
                 value={ inputValue }
-                onChange = {handleInputChange }
+                onChange = { handleInputChange }
             />
         </form>
     )
